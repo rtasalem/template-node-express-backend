@@ -1,10 +1,16 @@
 {
   "name": "node-express-template",
   "version": "1.0.0",
-  "description": "GitHub repository template for Node.js applications utilising an Express.js server.",
+  "description": "GitHub repository template for a Node.js backend microservice utilising an Express.js server.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pretest": "npm run test:lint",
+    "test": "jest --runInBand --forceExit",
+    "test:watch": "jest --coverage=false --onlyChanged --watch --runInBand",
+    "test:lint": "standard",
+    "test:debug": "node --inspect-brk=0.0.0.0 ./node_modules/jest/bin/jest.js --coverage=false --onlyChanged --watch --runInBand --no-cache",
+    "start:watch": "nodemon --inspect=0.0.0.0 --ext js --legacy-watch app/index.js",
+    "start:debug": "nodemon --inspect-brk=0.0.0.0 --ext js --legacy-watch app/index.js"
   },
   "author": "",
   "license": "ISC"

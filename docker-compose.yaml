@@ -1,0 +1,8 @@
+services: 
+  node-express-tempalte:
+    build:
+      context: .
+      target: production
+    image: node-express-template
+    container_name: node-express-template
+    # environment:
