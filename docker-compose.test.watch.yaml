@@ -1,0 +1,6 @@
+services:
+  node-express-template:
+    command: >
+      sh -c "git config --global --add safe.directory /home/node && npm run test:watch"
+    volumes:
+      - ./.git:/home/node/.git

@@ -5,4 +5,4 @@ services:
       target: production
     image: node-express-template
     container_name: node-express-template
-    # environment:
+    # environment: # uncomment this line and add environment variables
