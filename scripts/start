@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if [ -z "$(docker network ls --filter name=^ch-tab$ --format={{.Name}})" ]; then
+if [ -z "$(docker network ls --filter name=^node-express-template$ --format={{.Name}})" ]; then
   echo "Creating node-express-template Docker network"
   docker network create node-express-template
 fi
