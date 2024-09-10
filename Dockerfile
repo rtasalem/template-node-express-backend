@@ -1,5 +1,5 @@
-ARG PORT=3001
-ARG PORT_DEBUG=9001
+ARG PORT=3000
+ARG PORT_DEBUG=9229
 
 # Development
 FROM node:latest AS development
@@ -14,11 +14,9 @@ CMD [ "npm", "run", "start:watch" ]
 
 # Production
 FROM node:latest AS production
-
 ARG PORT
 ENV PORT ${PORT}
 EXPOSE ${PORT}
-
 COPY --from=development /home/node/app/ ./app/
 COPY --from=development /home/node/package*.json ./
 RUN npm ci
