@@ -1,7 +1,7 @@
 {
   "name": "node-express-template",
   "version": "0.1.0",
-  "description": "GitHub repository template for a Node.js backend microservice utilising an Express.js server.",
+  "description": "Template for a Node.js microservice utilising an Express.js server.",
   "main": "app/index.js",
   "type": "module",
   "scripts": {
@@ -10,7 +10,7 @@
     "test:watch": "jest --coverage=false --onlyChanged --watch --runInBand",
     "test:lint": "standard",
     "test:debug": "node --inspect-brk=0.0.0.0 ./node_modules/jest/bin/jest.js --coverage=false --onlyChanged --watch --runInBand --no-cache",
-    "start:watch": "nodemon --inspect=0.0.0.0 --ext js --legacy-watch --ignore node_modules app/index.js",
+    "start:watch": "nodemon --inspect=0.0.0.0 --ext js --legacy-watch app/index.js",
     "start:debug": "nodemon --inspect-brk=0.0.0.0 --ext js --legacy-watch app/index.js"
   },
   "contributors": [],
@@ -23,5 +23,22 @@
   "devDependencies": {
     "nodemon": "3.1.4",
     "standard": "17.1.0"
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "beforeEach",
+      "expect",
+      "test",
+      "afterEach",
+      "jest",
+      "beforeAll",
+      "afterAll"
+    ]
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "**/test-output/**"
+    ]
   }
 }

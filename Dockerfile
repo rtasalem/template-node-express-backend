@@ -7,9 +7,9 @@ ARG PORT
 ARG PORT_DEBUG
 ENV PORT ${PORT}
 EXPOSE ${PORT} ${PORT_DEBUG}
-COPY --chown=node:node package*.json ./
+COPY package*.json ./
 RUN npm install
-COPY --chown=node:node . .
+COPY . .
 CMD [ "npm", "run", "start:watch" ]
 
 # Production
@@ -22,4 +22,4 @@ EXPOSE ${PORT}
 COPY --from=development /home/node/app/ ./app/
 COPY --from=development /home/node/package*.json ./
 RUN npm ci
-CMD [ "node", "app" ]
+CMD [ "nodemon", "app" ]
