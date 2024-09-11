@@ -1,5 +1,5 @@
 services: 
-  node-express-tempalte:
+  node-express-template:
     build:
       context: .
       target: production

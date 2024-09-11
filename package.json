@@ -10,7 +10,7 @@
     "test:watch": "jest --coverage=false --onlyChanged --watch --runInBand",
     "test:lint": "standard",
     "test:debug": "node --inspect-brk=0.0.0.0 ./node_modules/jest/bin/jest.js --coverage=false --onlyChanged --watch --runInBand --no-cache",
-    "start:watch": "nodemon --inspect=0.0.0.0 --ext js --legacy-watch app/index.js",
+    "start:watch": "nodemon --inspect=0.0.0.0 --ext js --legacy-watch --ignore node_modules app/index.js",
     "start:debug": "nodemon --inspect-brk=0.0.0.0 --ext js --legacy-watch app/index.js"
   },
   "contributors": [],
@@ -21,7 +21,7 @@
     "joi": "17.13.3"
   },
   "devDependencies": {
-    "nodemon": "3.0.1",
+    "nodemon": "3.1.4",
     "standard": "17.1.0"
   }
 }
