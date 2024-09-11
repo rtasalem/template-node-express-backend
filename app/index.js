@@ -1,14 +1,10 @@
-const { app, port } = require('./server')
+import { app, port } from './server.js'
 
-const init = async () => {
-  app.listen(port, () => {
-    console.log(`Server running on https://localhost:${port}`)
-  })
-}
-
-process.on('unhandledRejection', err => {
-  console.log(err)
-  process.exit(1)
+app.listen(port, () => {
+  console.log(`Server running on https://localhost:${port}`)
 })
 
-init()
+process.on('unhandledRejection', error => {
+  console.error(error)
+  process.exit(1)
+})

@@ -1,8 +1,9 @@
 {
   "name": "node-express-template",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "GitHub repository template for a Node.js backend microservice utilising an Express.js server.",
   "main": "app/index.js",
+  "type": "module",
   "scripts": {
     "pretest": "npm run test:lint",
     "test": "jest --runInBand --forceExit",
@@ -20,7 +21,7 @@
     "joi": "17.13.3"
   },
   "devDependencies": {
-    "nodemon": "3.1.4",
+    "nodemon": "3.0.1",
     "standard": "17.1.0"
   }
 }

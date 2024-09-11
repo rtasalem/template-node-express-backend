@@ -1,4 +1,4 @@
 networks:
   default:
-    external:
       name: node-express-template
+      external: true

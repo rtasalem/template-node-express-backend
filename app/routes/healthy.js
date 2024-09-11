@@ -1,8 +1,9 @@
-const express = require('express')
+import express from 'express'
+
 const healthyRouter = express.Router()
 
 healthyRouter.get('/healthy', (req, res) => {
   res.status(200).send('ok')
 })
 
-module.exports = healthyRouter
+export default healthyRouter

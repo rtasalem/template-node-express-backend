@@ -5,4 +5,6 @@ services:
       target: production
     image: node-express-template
     container_name: node-express-template
-    # environment: # uncomment this line and add environment variables
+    environment:
+      DUMMY_ENV_VAR_1: ${DUMMY_ENV_VAR_1}
+      DUMMY_ENV_VAR_2: ${DUMMY_ENV_VAR_2}
