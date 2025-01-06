@@ -1,3 +1,0 @@
-services:
-  node-express-template:
-    command: npm run start:debug

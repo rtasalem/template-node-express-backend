@@ -1,25 +1,20 @@
 ARG PORT=3000
-ARG PORT_DEBUG=9229
 
 # Development
-FROM node:latest AS development
+FROM node:23-alpine AS development
+WORKDIR /home/node/
+USER node
+ENV NODE_ENV=development
 ARG PORT
-ARG PORT_DEBUG
-ENV PORT ${PORT}
-EXPOSE ${PORT} ${PORT_DEBUG}
-COPY package*.json ./
+ENV PORT=${PORT}
+EXPOSE ${PORT}
+COPY --chown=node:node package*.json ./
 RUN npm install
-COPY . .
-CMD [ "npm", "run", "start:watch" ]
+COPY --chown=node:node ./app ./app
+CMD [ "npm", "run", "dev" ]
 
 # Production
-FROM node:latest AS production
-
-ARG PORT
-ENV PORT ${PORT}
-EXPOSE ${PORT}
-
-COPY --from=development /home/node/app/ ./app/
-COPY --from=development /home/node/package*.json ./
+FROM development AS production
+ENV NODE_ENV=production
 RUN npm ci
-CMD [ "nodemon", "app" ]
+CMD [ "node", "app" ]

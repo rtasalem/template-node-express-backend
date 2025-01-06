@@ -1,10 +1,5 @@
-services: 
+services:
   node-express-template:
-    build:
-      context: .
-      target: production
+    build: .
     image: node-express-template
     container_name: node-express-template
-    environment:
-      DUMMY_ENV_VAR_1: ${DUMMY_ENV_VAR_1}
-      DUMMY_ENV_VAR_2: ${DUMMY_ENV_VAR_2}

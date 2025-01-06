@@ -1,14 +1,16 @@
 import express from 'express'
-import healthyRouter from './routes/healthy.js'
-import healthzRouter from './routes/healthz.js'
+import { serverConfig } from './config/index.js'
+import { health } from './routes/index.js'
 
-const app = express()
-const port = 3000
+const server = async () => {
+  const app = express()
+  const port = serverConfig.get('port')
 
-app.use(healthyRouter)
-app.use(healthzRouter)
+  app.use(health)
 
-export {
-  app,
-  port
+  app.listen(port, () => {
+    console.log(`Application listening on http://localhost:${port}`)
+  })
 }
+
+export { server }
