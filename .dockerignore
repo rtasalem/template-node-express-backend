@@ -3,7 +3,6 @@ npm-debug.log
 Dockerfile
 .dockerignore
 docs
-helm
 docker-compose*
 .secrets.baseline
 .pre-commit-config.yaml

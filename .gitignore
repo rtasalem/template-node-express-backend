@@ -1,7 +1,6 @@
-test-output
-node_modules
-helm/**/*.lock
 .DS_Store
-*.tgz
-.vscode
 .env
+.husky
+node_modules
+test-output
+.vscode
