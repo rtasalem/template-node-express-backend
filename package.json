@@ -9,7 +9,8 @@
     "dev": "nodemon --inspect=0.0.0.0 --ext css,js,njk --legacy-watch app/index.js",
     "lint": "standard",
     "git:pre-push-hook": "npm lint && npm test",
-    "prepare": "husky"
+    "postinstall": "npm run setup:husky",
+    "setup:husky": "husky install"
   },
   "contributors": [],
   "license": "MIT",
