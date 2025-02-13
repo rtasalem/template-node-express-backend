@@ -1,2 +1,1 @@
-npm run lint:check
-npx detect-secrets --baseline .secrets.baseline
+npm run lint:check && npx detect-secrets --baseline .secrets.baseline

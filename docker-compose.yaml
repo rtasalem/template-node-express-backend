@@ -3,5 +3,3 @@ services:
     build: .
     image: node-express-template
     container_name: node-express-template
-    environment:
-      POSTGRES_PASSWORD: ppp
