@@ -1,5 +1,5 @@
 {
-  "name": "node-express-template",
+  "name": "template-node-express-backend",
   "version": "0.1.0",
   "description": "Template for a Node.js microservice utilising an Express.js server.",
   "main": "app/index.js",

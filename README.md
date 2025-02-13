@@ -1,4 +1,4 @@
-# node-express-template
+# template-node-express-backend
 GitHub repository template for backend Node.js applications.
 
 ## Features
