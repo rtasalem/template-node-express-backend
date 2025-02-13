@@ -6,6 +6,8 @@ GitHub repository template for backend Node.js applications.
 - [Express.js](https://expressjs.com/)
 - Hosted inside a Docker container for easy local development and distribution.
 - [Convict](https://www.npmjs.com/package/convict) for clear & easy-to-read configuration.
+- [Husky](https://typicode.github.io/husky/) for lightweight pre-commit hooks:
+   - link check using `standard --check`.
 
 ## Prerequisites
 Node.js (LTS) <br>
