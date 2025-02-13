@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node app/index.js",
     "dev": "nodemon --inspect=0.0.0.0 --ext css,js,njk --legacy-watch app/index.js",
-    "lint": "standard",
+    "lint": "standard --fix",
     "git:pre-push-hook": "npm lint && npm test",
     "postinstall": "npm run setup:husky",
     "setup:husky": "husky install"
