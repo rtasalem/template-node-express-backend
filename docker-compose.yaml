@@ -1,5 +1,5 @@
 services:
-  node-express-template:
+  template-node-express-backend:
     build: .
-    image: node-express-template
-    container_name: node-express-template
+    image: template-node-express-backend
+    container_name: template-node-express-backend

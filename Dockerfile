@@ -1,7 +1,7 @@
 ARG PORT=3000
 
 # Development
-FROM node:23-alpine AS development
+FROM node:lts AS development
 WORKDIR /home/node/
 USER node
 ENV NODE_ENV=development
