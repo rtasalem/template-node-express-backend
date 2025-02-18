@@ -12,9 +12,3 @@ COPY --chown=node:node package*.json ./
 RUN npm install
 COPY --chown=node:node ./app ./app
 CMD [ "npm", "run", "dev" ]
-
-# Production
-FROM development AS production
-ENV NODE_ENV=production
-RUN npm ci
-CMD [ "node", "app" ]
