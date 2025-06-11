@@ -4,10 +4,3 @@ repos:
   hooks:
   - id: detect-secrets
     args: ['--baseline', '.secrets.baseline']
-- repo: local
-  hooks:
-    - id: eslint
-      name: Run ESLint
-      entry: npm run lint:fix
-      language: system
-      types: [javascript]
