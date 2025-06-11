@@ -8,7 +8,7 @@ const server = async () => {
 
   app.use(health)
 
-  app.listen(port,() =>{
+  app.listen(port, () => {
     console.log(`Application listening on http://localhost:${port}`)
   })
 }
