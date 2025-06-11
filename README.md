@@ -10,12 +10,12 @@ GitHub repository template for backend Node.js applications.
    - link check using `standard --check`.
 
 ## Prerequisites
-Node.js (LTS) <br>
-or <br>
+Node.js (LTS)  
+or  
 Docker Compose
 
 ## Getting Started
-Clone the template repository. <br>
+Clone the template repository.  
 Install dependencies:
 ```
 npm install
