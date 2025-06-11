@@ -12,3 +12,4 @@ services:
       - ./package.json:/home/node/package.json
     environment:
       POSTGRES_PASSWORD: ppp
+      POSTGRES_PASSWORD_2: pppddd
