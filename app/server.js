@@ -1,10 +1,10 @@
 import express from 'express'
-import { serverConfig } from './config/index.js'
+import { config } from './config/index.js'
 import { health } from './routes/index.js'
 
 const server = async () => {
   const app = express()
-  const port = serverConfig.get('port')
+  const port = config.get('server.port')
 
   app.use(health)
 
