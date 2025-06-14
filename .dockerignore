@@ -6,4 +6,4 @@ docker-compose*
 .pre-commit-config.yaml
 README.md 
 .vscode
-.gitignore
+.gitignorex

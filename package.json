@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node app/index.js",
-    "dev": "nodemon --inspect=0.0.0.0 --ext css,js,njk --legacy-watch app/index.js",
+    "dev": "nodemon --inspect=0.0.0.0 --legacy-watch app/index.js",
     "lint:check": "npx eslint",
     "lint:fix": "npx eslint --fix"
   },
