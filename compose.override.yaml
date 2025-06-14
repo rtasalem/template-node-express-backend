@@ -1,0 +1,8 @@
+services:
+  template-node-express-backend:
+    build:
+      context: .
+      target: development
+    ports:
+      - "3000:3000"
+      - "9000:9229"
