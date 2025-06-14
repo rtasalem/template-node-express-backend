@@ -9,7 +9,7 @@ GitHub repository template for backend Node.js applications.
 - [Pre-commit](https://pre-commit.com) & [detect-secrets](https://github.com/Yelp/detect-secrets) hook to scan for sensitive information before commiting.
 - [Neostandard](https://github.com/neostandard/neostandard) as a reliable linter that needs little to no config and is ready to use.
 - NPM scripts which are laid out in the `package.json` to simply common commands for local development.
-oooooo
+
 ## Prerequisites
 Node.js (LTS)  
 or  
