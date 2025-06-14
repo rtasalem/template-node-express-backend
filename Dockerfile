@@ -1,7 +1,6 @@
 # development
 FROM node:22-alpine AS development
-RUN apk update && \
-    apk add --no-cache git
+RUN apk add --no-cache git
 WORKDIR /home/node/
 USER node
 
