@@ -2,7 +2,7 @@ services:
   template-node-express-backend:
     build:
       target: development
-    image: tempalte-node-express-backend-development
+    image: template-node-express-backend-development
     container_name: template-node-express-backend-development
     ports:
       - "3000:3000"
@@ -10,3 +10,10 @@ services:
     volumes:
       - ./app:/home/node/app
       - ./package.json:/home/node/package.json
+    networks:
+      - template-node-express-backend
+
+networks:
+  template-node-express-backend:
+    driver: bridge
+    name: template-node-express-backend
