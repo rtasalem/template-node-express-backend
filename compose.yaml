@@ -1,0 +1,7 @@
+services:
+  template-node-express-backend:
+    build: 
+      context: .
+      target: production
+    image: template-node-express-backend
+    container_name: template-node-express-backend
