@@ -1,4 +1,4 @@
-export const serverConfig = {
+const serverConfig = {
   server: {
     env: {
       doc: 'The application environment.',
@@ -26,3 +26,5 @@ export const serverConfig = {
     }
   }
 }
+
+export default serverConfig

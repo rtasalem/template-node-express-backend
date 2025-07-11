@@ -1,5 +1,1 @@
-import health from './health.js'
-
-export {
-  health
-}
+export { default as health } from './health.js'

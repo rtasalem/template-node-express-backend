@@ -6,7 +6,9 @@ GitHub repository template for backend Node.js applications.
 - [Express.js](https://expressjs.com/)
 - Hosted inside a Docker container for easy local development and distribution.
 - [Convict](https://www.npmjs.com/package/convict) for clear & easy-to-read configuration.
-- [Pre-commit](https://pre-commit.com) & [detect-secrets](https://github.com/Yelp/detect-secrets) hook to scan for sensitive information before committing.
+- [Pre-commit](https://pre-commit.com) hooks: 
+    - [detect-secrets](https://github.com/Yelp/detect-secrets) to scan for sensitive information 
+    - ESLint configured with neostandard to ensure formatting is consistent
 - [Neostandard](https://github.com/neostandard/neostandard) as a reliable linter that needs little to no config and is ready to use.
 - NPM scripts which are laid out in the `package.json` to simply common commands for local development.
 
@@ -24,7 +26,7 @@ npm install
 Run the application using either of the provided NPM scripts:
 ```
 npm start
-npm run dev
+npm run dev # run in watch mode using nodemon
 ```
 Build the Docker container:
 ```

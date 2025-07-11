@@ -1,5 +1,5 @@
 import express from 'express'
-import { config } from './config/index.js'
+import config from './config/index.js'
 import { health } from './routes/index.js'
 
 const server = async () => {
@@ -13,4 +13,4 @@ const server = async () => {
   })
 }
 
-export { server }
+export default server
