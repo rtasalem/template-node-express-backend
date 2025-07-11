@@ -3,7 +3,7 @@ Dockerfile
 docs
 docker-compose*
 .secrets.baseline
-.pre-commit-config.yaml
+.pre-commit-config.yml
 README.md 
 .vscode
 .gitignore

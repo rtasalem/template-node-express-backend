@@ -21,6 +21,11 @@ Install dependencies:
 ```
 npm install
 ```
+Run the application using either of the provided NPM scripts:
+```
+npm start
+npm run dev
+```
 Build the Docker container:
 ```
 docker compose build
