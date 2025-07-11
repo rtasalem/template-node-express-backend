@@ -13,4 +13,4 @@ const server = async () => {
   })
 }
 
-export { server}
+export { server }
