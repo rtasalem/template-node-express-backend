@@ -7,6 +7,8 @@
   "scripts": {
     "start": "node app/index.js",
     "dev": "nodemon --inspect=0.0.0.0 --legacy-watch app/index.js",
+    "docker:build": "docker compose build",
+    "docker:start": "docker compose up",
     "lint:check": "npx eslint",
     "lint:fix": "npx eslint --fix"
   },
