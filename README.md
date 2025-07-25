@@ -30,9 +30,9 @@ npm run dev # run in watch mode using nodemon
 ```
 Build the Docker container:
 ```
-docker compose build
+npm run docker:build
 ```
 Start up the Docker container:
 ```
-docker compose up -d
+npm run docker:start
 ```
